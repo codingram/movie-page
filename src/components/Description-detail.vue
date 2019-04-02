@@ -16,7 +16,7 @@
       </div>
     </b-row>
     <b-row>
-      <div class="descriptionTwo pl-4 pt-3">
+      <div class="descriptionTwo pl-4 pt-2">
         <div class="float-left">
           <div>
             <font-awesome-icon :icon="['fa', 'star']" class="rating-icon mr-1"/>
@@ -28,13 +28,13 @@
             <span>140 votes</span>
           </div>
         </div>
-        <div class="float-left rating-numbers-div ml-3 mt-1">
+        <div class="float-left rating-numbers-div ml-3">
           <span class="rating-numbers">4.4</span>
         </div>
         <div class="float-right">
           Share:
           <a href="#">
-            <font-awesome-icon :icon="['fab', 'facebook-square']" class="share-icons ml-2"/>
+            <font-awesome-icon :icon="['fab', 'facebook-f']" class="share-icons ml-2"/>
           </a>
           <a href="#">
             <font-awesome-icon :icon="['fab', 'twitter']" class="share-icons ml-2"/>
@@ -48,12 +48,20 @@
         </div>
       </div>
     </b-row>
-		<div class="pl-2">
-			<hr>
-		</div>
-		<b-row>
-
-		</b-row>
+    <div class="pl-2">
+      <hr>
+    </div>
+    <b-row>
+      <div class="descriptionThree pl-4">
+        <div class="descriptionHeading">Synopsis</div>
+        <div class="descriptionContent">
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+          <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+      </div>
+    </b-row>
   </div>
 </template>
 
@@ -100,6 +108,7 @@ export default {
 };
 </script>
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 .durationText {
   color: #ea6a00 !important;
   font-size: 11px;
@@ -140,7 +149,7 @@ export default {
 .descriptionTwo {
   height: auto;
   width: 100%;
-	font-size: 13px;
+  font-size: 13px;
 
   .rating-icon {
     color: #feaf00;
@@ -154,7 +163,7 @@ export default {
       height: 20px;
       line-height: 20px;
       background-color: #feaf00;
-      padding: 6px;
+      padding: 10px;
       border-radius: 50%;
       display: table-cell;
     }
@@ -162,5 +171,23 @@ export default {
   .share-icons {
     color: #c3c3c3;
   }
+}
+
+.descriptionThree {
+  .descriptionHeading {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #ea6a00;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  .descriptionContent {
+    font-size: 12px;
+		color: #797979;
+		// font-weight: bold;
+  }
+	p{
+		margin: 2px;
+		padding: 2px;
+	}
 }
 </style>

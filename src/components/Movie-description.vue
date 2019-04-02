@@ -1,18 +1,12 @@
 <template>
   <div>
-    <b-row>
-      <b-container>
-        <b-col md="10" class="mx-auto">
-          <b-row class="overcontent">
-            <b-col md="4" class="p-0">
-              <img src="@/assets/images/orig.jpeg" alt class="movieimage">
-            </b-col>
-            <b-col md="8" class="pr-0">
-              <Descdetail></Descdetail>
-            </b-col>
-          </b-row>
-        </b-col>
-      </b-container>
+    <b-row class="overcontent">
+      <b-col md="4" class="p-0">
+        <img src="@/assets/images/orig.jpeg" alt class="movieimage">
+      </b-col>
+      <b-col md="8" class="pr-0">
+        <Descdetail></Descdetail>
+      </b-col>
     </b-row>
   </div>
 </template>
@@ -25,18 +19,16 @@ export default {
     Descdetail
   },
   data() {
-    return {
-
-    };
+    return {};
   }
 };
 </script>
 <style lang="scss">
-.movieimage{
-	height: 475px;
-	width: 100%;
+.movieimage {
+  height: 525px;
+  width: 100%;
 }
-.overcontent{
+.overcontent {
   margin-top: -245px;
 }
 </style>

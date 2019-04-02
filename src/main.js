@@ -34,6 +34,7 @@ import {
 import {
   faLinkedinIn,
   faFacebookSquare,
+  faFacebookF,
   faTwitter,
   faGoogle,
   faYoutube,
@@ -77,6 +78,7 @@ library.add(faCommentAlt); //far
 library.add(
   faLinkedinIn,
   faFacebookSquare,
+  faFacebookF,
   faTwitter,
   faGoogle,
   faYoutube,
