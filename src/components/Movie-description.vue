@@ -7,7 +7,7 @@
             <b-col md="4" class="p-0">
               <img src="@/assets/images/orig.jpeg" alt class="movieimage">
             </b-col>
-            <b-col md="8">
+            <b-col md="8" class="pr-0">
               <Descdetail></Descdetail>
             </b-col>
           </b-row>

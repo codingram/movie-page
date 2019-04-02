@@ -39,7 +39,9 @@ import {
   faYoutube,
   faInstagram,
   faDribbble,
-  faApple
+  faApple,
+  faGooglePlusG,
+  faPinterest
 } from "@fortawesome/free-brands-svg-icons"; //fab
 
 import { faCommentAlt } from "@fortawesome/free-regular-svg-icons"; //far
@@ -80,7 +82,9 @@ library.add(
   faYoutube,
   faInstagram,
   faDribbble,
-  faApple
+  faApple,
+  faGooglePlusG,
+  faPinterest
 ); //fab
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
