@@ -11,9 +11,11 @@
           <span
             class="near-headerbrand-desc ml-2"
           >JoinMovies VIP for a chance to win. Don't forget to join during checkout</span>
-          <span class="float-right login-text">
-            <font-awesome-icon :icon="['fa', 'user']" class="mr-1"/>Login
-          </span>
+          <a href="#">
+            <span class="float-right login-text">
+              <font-awesome-icon :icon="['fa', 'user']" class="mr-1"/>Login
+            </span>
+          </a>
           <!-- <b-row>
             <b-col md="2">
               <span class="top-header-brand px-2">
@@ -48,22 +50,25 @@ export default {
 .top-header {
   background-color: black;
   // padding: 5px 0;
-  font-size: 15px;
-  //   height: 26px;
-  line-height: 1.3;
+  font-size: 13px;
+  height: 28px;
+  line-height: 28px;
 
   .top-header-brand {
     color: #ffffff;
     background-color: #9c5d9e;
+    font-weight: bold;
+    padding: 7px;
   }
 
   .near-headerbrand-text {
     color: #ea6a00;
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: bolder;
   }
   @mixin topheader-mixin {
     color: #858586;
-    font-size: 13px;
+    font-size: 12px;
   }
   .near-headerbrand-desc {
     @include topheader-mixin();

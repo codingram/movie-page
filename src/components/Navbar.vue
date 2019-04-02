@@ -1,9 +1,7 @@
 <template>
   <div>
-    <b-container>
     <headerOne></headerOne>
     <headerTwo></headerTwo>
-    </b-container>
   </div>
 </template>
 

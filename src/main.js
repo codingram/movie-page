@@ -26,7 +26,9 @@ import {
   faTh,
   faDumbbell,
   faEnvelopeOpenText,
-  faUser
+  faUser,
+  faStar,
+  faStarHalfAlt
 } from "@fortawesome/free-solid-svg-icons"; //fas fa
 
 import {
@@ -63,7 +65,9 @@ library.add(
   faTh,
   faDumbbell,
   faEnvelopeOpenText,
-  faUser
+  faUser,
+  faStar,
+  faStarHalfAlt
 ); //fas
 
 library.add(faCommentAlt); //far
