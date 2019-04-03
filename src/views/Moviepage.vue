@@ -7,11 +7,13 @@
         <b-container>
           <b-col md="10" class="mx-auto p-0">
             <Moviedisc></Moviedisc>
+            <Photo></Photo>
             <Showtime></Showtime>
             <Wcomment></Wcomment>
           </b-col>
         </b-container>
       </b-row>
+      <Footerdiv></Footerdiv>
     </div>
   </div>
 </template>
@@ -22,6 +24,8 @@ import Backposter from "@/components/Background-poster.vue";
 import Moviedisc from "@/components/Movie-description.vue";
 import Wcomment from "@/components/Comment.vue";
 import Showtime from "@/components/Show-time.vue";
+import Photo from "@/components/Photos.vue";
+import Footerdiv from "@/components/Footer.vue";
 
 export default {
   name: "NavBar",
@@ -30,7 +34,9 @@ export default {
     Backposter,
     Moviedisc,
     Wcomment,
-    Showtime
+    Showtime,
+    Photo,
+    Footerdiv
   }
 };
 </script>

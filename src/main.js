@@ -3,6 +3,9 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import BootstrapVue from "bootstrap-vue";
+import VueAwesomeSwiper from "vue-awesome-swiper";
+
+import "swiper/dist/css/swiper.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 
@@ -29,7 +32,8 @@ import {
   faUser,
   faStar,
   faStarHalfAlt,
-  faStore
+  faStore,
+  faPhone
 } from "@fortawesome/free-solid-svg-icons"; //fas fa
 
 import {
@@ -43,10 +47,11 @@ import {
   faDribbble,
   faApple,
   faGooglePlusG,
-  faPinterest
+  faPinterest,
+  faTelegramPlane
 } from "@fortawesome/free-brands-svg-icons"; //fab
 
-import { faCommentAlt } from "@fortawesome/free-regular-svg-icons"; //far
+import { faCommentAlt, faEnvelope } from "@fortawesome/free-regular-svg-icons"; //far
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
@@ -72,10 +77,11 @@ library.add(
   faUser,
   faStar,
   faStarHalfAlt,
-  faStore
+  faStore,
+  faPhone
 ); //fas
 
-library.add(faCommentAlt); //far
+library.add(faCommentAlt, faEnvelope); //far
 
 library.add(
   faLinkedinIn,
@@ -88,11 +94,12 @@ library.add(
   faDribbble,
   faApple,
   faGooglePlusG,
-  faPinterest
+  faPinterest,
+  faTelegramPlane
 ); //fab
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
-
+Vue.use(VueAwesomeSwiper);
 Vue.use(BootstrapVue);
 Vue.config.productionTip = false;
 

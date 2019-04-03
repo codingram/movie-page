@@ -4,21 +4,25 @@
     <b-row>
       <b-col md="12" class>
         <b-row>
-        <b-col md="3" class="p-0">
-          <div class="showtimeTitle backColor py-2 pl-3">
-            <span class="iconColor">
-              <font-awesome-icon :icon="['fa', 'store']" class="mr-2"/>
-            </span>SELECT A CINEMA
-          </div>
-          <div class="cinemaList backColor mt-1 py-3 px-4">
-            <ul class="m-0 p-0">
-              <li class="listStyle mt-1 pt-1" v-for="list in cinemaList" :key="list.index">{{list}}</li>
-            </ul>
-          </div>
-        </b-col>
-        <b-col class="9">
-          <div class="sidediv backColor"></div>
-        </b-col>
+          <b-col md="3" class="p-0">
+            <div class="showtimeTitle backColor py-2 pl-3">
+              <span class="iconColor">
+                <font-awesome-icon :icon="['fa', 'store']" class="mr-2"/>
+              </span>SELECT A CINEMA
+            </div>
+            <div class="cinemaList backColor mt-1 py-3 px-4">
+              <ul class="m-0 p-0">
+                <li
+                  class="listStyle mt-1 pt-1"
+                  v-for="list in cinemaList"
+                  :key="list.index"
+                >{{list}}</li>
+              </ul>
+            </div>
+          </b-col>
+          <b-col class="9">
+            <div class="sidediv backColor"></div>
+          </b-col>
         </b-row>
       </b-col>
     </b-row>

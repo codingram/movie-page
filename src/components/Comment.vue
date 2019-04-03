@@ -16,26 +16,36 @@
         <b-form-textarea class="comment-input"></b-form-textarea>
       </b-col>
     </b-row>
+
+      <div class="mt-3">
     <b-row>
-      <b-col md="4">
-        <label>
-          Name
-          <span class="astrik">*</span>
-        </label>
-        <b-form-input class="comment-input"></b-form-input>
-      </b-col>
-      <b-col md="4">
-        <label>
-          Email
-          <span class="astrik">*</span>
-        </label>
-        <b-form-input class="comment-input"></b-form-input>
-      </b-col>
-      <b-col md="4">
-        <label>Website</label>
-        <b-form-input class="comment-input"></b-form-input>
-      </b-col>
+        <b-col md="4">
+          <label class="mb-0">
+            Name
+            <span class="astrik">*</span>
+          </label>
+          <b-form-input class="comment-input"></b-form-input>
+        </b-col>
+        <b-col md="4">
+          <label class="mb-0">
+            Email
+            <span class="astrik">*</span>
+          </label>
+          <b-form-input class="comment-input"></b-form-input>
+        </b-col>
+        <b-col md="4">
+          <label class="mb-0">Website</label>
+          <b-form-input class="comment-input"></b-form-input>
+        </b-col>
     </b-row>
+
+      </div>
+
+    <div class="button-div float-right mr-3 mt-2">
+      <b-row>
+        <button class="post-btn px-3 py-2">POST COMMENT</button>
+      </b-row>
+    </div>
   </div>
 </template>
 
@@ -45,6 +55,16 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+.button-div {
+  .post-btn {
+    background-color: #ea6a00;
+    font-size: 12px;
+    color: white;
+    outline: none;
+    border: none;
+  }
+}
+
 .descriptionHeading {
   font-family: "Roboto Condensed", sans-serif;
   color: #ea6a00;
