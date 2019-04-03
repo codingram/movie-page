@@ -116,7 +116,7 @@ export default {
 .descriptionOne {
   height: auto;
   width: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
 
   .bgcolortext {
     font-size: 10px;
@@ -128,19 +128,18 @@ export default {
     //   width: 275px;
   }
 
-  @mixin tableContent {
-    font-size: 12px;
+  @mixin tableContent($fontsize) {
+    font-size: $fontsize;
     font-weight: 900;
   }
 
   .tableTitle {
-    font-size: 13px;
-    font-weight: 900;
-    width: 14%;
+    @include tableContent(13px);
+    width: 12%;
   }
 
   .tableText {
-    @include tableContent();
+    @include tableContent(12px);
     color: #c3c3c3;
     padding-left: 12px;
   }
@@ -180,14 +179,15 @@ export default {
     font-size: 26px;
     font-weight: 600;
   }
+
   .descriptionContent {
     font-size: 12px;
-		color: #797979;
-		// font-weight: bold;
+    color: #797979;
   }
-	p{
-		margin: 2px;
-		padding: 2px;
-	}
+
+  p {
+    margin: 2px;
+    padding: 2px;
+  }
 }
 </style>

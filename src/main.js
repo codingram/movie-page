@@ -28,7 +28,8 @@ import {
   faEnvelopeOpenText,
   faUser,
   faStar,
-  faStarHalfAlt
+  faStarHalfAlt,
+  faStore
 } from "@fortawesome/free-solid-svg-icons"; //fas fa
 
 import {
@@ -70,7 +71,8 @@ library.add(
   faEnvelopeOpenText,
   faUser,
   faStar,
-  faStarHalfAlt
+  faStarHalfAlt,
+  faStore
 ); //fas
 
 library.add(faCommentAlt); //far

@@ -3,19 +3,19 @@
     <div class="descriptionHeading mt-5">
       <u>WRITE A COMMENT</u>
     </div>
-    <div class="headingdisc">
+    <div class="headingdisc mt-1 mb-2">
       Your email address will not be published. Required fields are marked
       <span class="astrik">*</span>
     </div>
-		<b-row>
+    <b-row>
       <b-col md="12">
         <label>
           Comment
           <span class="astrik">*</span>
         </label>
-				<b-form-textarea class="comment-input"></b-form-textarea>
+        <b-form-textarea class="comment-input"></b-form-textarea>
       </b-col>
-		</b-row>
+    </b-row>
     <b-row>
       <b-col md="4">
         <label>
@@ -67,7 +67,7 @@ export default {
 
 .comment-input {
   border-radius: 0;
-	border: 1px solid #dbdbdb !important;
-	resize: none;
+  border: 1px solid #dbdbdb !important;
+  resize: none;
 }
 </style>
