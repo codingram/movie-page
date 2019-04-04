@@ -1,22 +1,23 @@
 <template>
   <div>
     <b-row>
-      <b-container>
-        <b-col md="10" class="mx-auto">
+      <b-container class="p-0">
+        <b-col md="10" class="mx-auto p-0">
           <b-navbar toggleable="lg" class="px-0">
             <b-navbar-brand class="brandname" href="#">MOVIAK</b-navbar-brand>
-
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-
             <b-collapse id="nav-collapse" is-nav>
               <!-- Right aligned nav items -->
               <b-navbar-nav>
                 <b-nav-form>
-                  <b-form-input size="sm" class="mr-sm-2 navbar-input" placeholder="Movie Search..."></b-form-input>
+                  <b-form-input
+                    size="sm"
+                    class="mr-sm-2 navbar-input"
+                    placeholder="Movie Search..."
+                  ></b-form-input>
                   <b-button size="sm" class="my-2 my-sm-0 roundBtn border-0">GO</b-button>
                 </b-nav-form>
               </b-navbar-nav>
-
               <b-navbar-nav class="ml-auto">
                 <b-nav-item href="#">HOME</b-nav-item>
                 <b-nav-item href="#">MOVIE LAYOUT</b-nav-item>
@@ -38,7 +39,7 @@ export default {
 };
 </script>
 <style scoped lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 
 .navbar-input {
   border-radius: 20px;
@@ -63,8 +64,8 @@ b-navbar-brand {
   text-decoration: none;
 }
 
-.navbar-light .navbar-nav .nav-link{
-  font-family: 'Roboto Condensed', sans-serif;
+.navbar-light .navbar-nav .nav-link {
+  font-family: "Roboto Condensed", sans-serif;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -75,14 +76,12 @@ b-navbar-brand {
     transition: 0.2s;
   }
 }
-.navbar-input{
-    border: 2px solid #dfdfdf;
+.navbar-input {
+  border: 2px solid #dfdfdf;
 
-  &::placeholder{
+  &::placeholder {
     font-size: 12px;
     margin: 5px;
   }
-
 }
-
 </style>

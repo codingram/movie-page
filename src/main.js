@@ -12,22 +12,6 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 import {
-  faCoffee,
-  faShieldAlt,
-  faQuoteLeft,
-  faFingerprint,
-  faCaretRight,
-  faLaptop,
-  faChevronRight,
-  faBars,
-  faSquare,
-  faCalendar,
-  faCircle,
-  faPencilAlt,
-  faUserSecret,
-  faCaretDown,
-  faTh,
-  faDumbbell,
   faEnvelopeOpenText,
   faUser,
   faStar,
@@ -37,42 +21,19 @@ import {
 } from "@fortawesome/free-solid-svg-icons"; //fas fa
 
 import {
-  faLinkedinIn,
-  faFacebookSquare,
   faFacebookF,
   faTwitter,
-  faGoogle,
-  faYoutube,
-  faInstagram,
-  faDribbble,
   faApple,
   faGooglePlusG,
   faPinterest,
   faTelegramPlane
 } from "@fortawesome/free-brands-svg-icons"; //fab
 
-import { faCommentAlt, faEnvelope } from "@fortawesome/free-regular-svg-icons"; //far
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons"; //far
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 library.add(
-  faCircle,
-  faPencilAlt,
-  faBars,
-  faCalendar,
-  faSquare,
-  faQuoteLeft,
-  faChevronRight,
-  faLaptop,
-  faCoffee,
-  faShieldAlt,
-  faFingerprint,
-  faCaretRight,
-  faLaptop,
-  faUserSecret,
-  faCaretDown,
-  faTh,
-  faDumbbell,
   faEnvelopeOpenText,
   faUser,
   faStar,
@@ -81,17 +42,11 @@ library.add(
   faPhone
 ); //fas
 
-library.add(faCommentAlt, faEnvelope); //far
+library.add(faEnvelope); //far
 
 library.add(
-  faLinkedinIn,
-  faFacebookSquare,
   faFacebookF,
   faTwitter,
-  faGoogle,
-  faYoutube,
-  faInstagram,
-  faDribbble,
   faApple,
   faGooglePlusG,
   faPinterest,

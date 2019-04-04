@@ -1,6 +1,8 @@
 <template>
   <div class="showTime mt-4">
-    <div class="showtimeHeader mb-2">Showtime</div>
+    <b-row>
+      <div class="showtimeHeader mb-2">Showtime</div>
+    </b-row>
     <b-row>
       <b-col md="12" class>
         <b-row>

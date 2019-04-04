@@ -89,7 +89,14 @@
       </b-container>
     </div>
     <div class="footer-two">
-
+      <div class="px-5 mx-5">
+        <div class="leftside float-left">© Copyright 2016 Movie</div>
+        <div class="right-side float-right">
+          <a href>Privacy Policy</a>
+          <a href>Terms of us</a>
+          <a href>Site Map</a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -103,6 +110,22 @@ export default {
 };
 </script>
 <style lang="scss">
+.footer-two {
+  background: #000000;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  font-size: 12px;
+  color: #464c50;
+  .right-side {
+    text-align: left;
+    a {
+      color: #464c50;
+      padding: 0 5px;
+      text-decoration: none;
+    }
+  }
+}
 .footerimage {
   height: 400px;
   width: 100%;

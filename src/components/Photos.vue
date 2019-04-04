@@ -1,8 +1,8 @@
 <template>
   <div class="carouselPhoto mt-4">
-    <b-row>
+    <b-row class="carouselHeading">
       <div class="carouselPhotoHeader mb-2">Video & Photo</div>
-      <div class="mb-2">
+      <div class="mb-2 ml-auto">
         <button class="sidebtn px-3">1 video</button>
         <button class="sidebtn px-3">6 photos</button>
       </div>
@@ -44,23 +44,23 @@ export default {
           prevEl: ".swiper-button-prev"
         },
         breakpoints: {
-            1024: {
-              slidesPerView: 4,
-              spaceBetween: 40
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 30
-            },
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20
-            },
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 10
-            }
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10
           }
+        }
       }
     };
   }
@@ -68,6 +68,9 @@ export default {
 </script>
 <style scoped lang="scss">
 .carouselPhoto {
+  .carouselHeading {
+    margin: 0 -15px;
+  }
   .carouselPhotoHeader {
     font-family: "Roboto Condensed", sans-serif;
     color: #ea6a00;

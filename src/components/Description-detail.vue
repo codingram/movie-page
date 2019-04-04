@@ -29,9 +29,9 @@
           </div>
         </div>
         <div class="float-left rating-numbers-div ml-3">
-          <span class="rating-numbers">4.4</span>
+          <span class="rating-numbers font-weight-bold">4.4</span>
         </div>
-        <div class="float-right">
+        <div class="float-right shareicons-div">
           Share:
           <a href="#">
             <font-awesome-icon :icon="['fab', 'facebook-f']" class="share-icons ml-2"/>
@@ -109,8 +109,9 @@ export default {
 </script>
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import "../assets/scss/_variables.scss";
 .durationText {
-  color: #ea6a00 !important;
+  color: $darkOrange !important;
   font-size: 11px;
 }
 .descriptionOne {
@@ -120,7 +121,7 @@ export default {
 
   .bgcolortext {
     font-size: 10px;
-    background-color: #ea6a00;
+    background-color: $darkOrange;
   }
 
   .dicsTable {
@@ -146,7 +147,7 @@ export default {
 }
 
 .descriptionTwo {
-  height: auto;
+  height: 40px;
   width: 100%;
   font-size: 13px;
 
@@ -159,23 +160,28 @@ export default {
     line-height: auto;
 
     .rating-numbers {
+      color: #ffffff;
       height: 20px;
       line-height: 20px;
       background-color: #feaf00;
       padding: 10px;
       border-radius: 50%;
       display: table-cell;
+      font-size: 14px;
     }
   }
   .share-icons {
     color: #c3c3c3;
+  }
+  .shareicons-div {
+    line-height: 40px;
   }
 }
 
 .descriptionThree {
   .descriptionHeading {
     font-family: "Roboto Condensed", sans-serif;
-    color: #ea6a00;
+    color: $darkOrange;
     font-size: 26px;
     font-weight: 600;
   }

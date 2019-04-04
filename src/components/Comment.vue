@@ -55,9 +55,10 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+@import "../assets/scss/_variables.scss";
 .button-div {
   .post-btn {
-    background-color: #ea6a00;
+    background-color: $darkOrange;
     font-size: 12px;
     color: white;
     outline: none;
@@ -67,17 +68,18 @@ export default {
 
 .descriptionHeading {
   font-family: "Roboto Condensed", sans-serif;
-  color: #ea6a00;
+  color: $darkOrange;
   font-size: 22px;
   font-weight: 600;
 }
 .astrik {
-  color: #ea6a00;
+  color: $darkOrange;
 }
 
 .comment-div {
   font-size: 12px;
   color: #797979;
+  margin: 0 -15px;
 }
 
 .headingdisc {

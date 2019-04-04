@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="mx-3">
     <b-row class="top-header">
-      <b-container>
-        <b-col md="10" class="mx-auto">
+      <b-container class="p-0">
+        <b-col md="10" class="mx-auto p-0">
           <span class="top-header-brand">
             <font-awesome-icon :icon="['fab', 'apple']" class/>VIP
             <em>SWEEPSTAKES</em>
@@ -16,25 +16,6 @@
               <font-awesome-icon :icon="['fa', 'user']" class="mr-1"/>Login
             </span>
           </a>
-          <!-- <b-row>
-            <b-col md="2">
-              <span class="top-header-brand px-2">
-                <font-awesome-icon :icon="['fab', 'apple']" class/>VIP
-                <em>SWEEPSTAKES</em>
-              </span>
-            </b-col>
-            <b-col md="8">
-              <span class="near-headerbrand-text font-weight-bold ml-3">$5000 SHOPPING SPREE</span>
-              <span
-                class="near-headerbrand-desc ml-2"
-              >JoinMovies VIP for a chance to win. Don't forget to join during checkout</span>
-            </b-col>
-            <b-col md="2">
-              <span class="float-right login-text">
-                <font-awesome-icon :icon="['fab', 'apple']" class="mr-1"/>Login
-              </span>
-            </b-col>
-          </b-row>-->
         </b-col>
       </b-container>
     </b-row>
@@ -49,7 +30,6 @@ export default {
 <style scoped lang="scss">
 .top-header {
   background-color: black;
-  // padding: 5px 0;
   font-size: 13px;
   height: 28px;
   line-height: 28px;
