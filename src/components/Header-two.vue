@@ -40,17 +40,18 @@ export default {
 </script>
 <style scoped lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+@import "../assets/scss/_variables.scss";
 
 .navbar-input {
   border-radius: 20px;
 }
 
 b-navbar-brand {
-  color: #ea6a00;
+  color: $darkOrange;
 }
 
 .roundBtn {
-  background-color: #ea6a00;
+  background-color: $darkOrange;
   outline: none;
   text-align: center;
   width: 30px;
@@ -72,7 +73,7 @@ b-navbar-brand {
   color: #000;
 
   &:hover {
-    color: #ea6a00 !important;
+    color: $darkOrange !important;
     transition: 0.2s;
   }
 }

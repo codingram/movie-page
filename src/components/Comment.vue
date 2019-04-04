@@ -17,8 +17,8 @@
       </b-col>
     </b-row>
 
-      <div class="mt-3">
-    <b-row>
+    <div class="mt-3">
+      <b-row>
         <b-col md="4">
           <label class="mb-0">
             Name
@@ -37,9 +37,8 @@
           <label class="mb-0">Website</label>
           <b-form-input class="comment-input"></b-form-input>
         </b-col>
-    </b-row>
-
-      </div>
+      </b-row>
+    </div>
 
     <div class="button-div float-right mr-3 mt-2">
       <b-row>
@@ -72,19 +71,20 @@ export default {
   font-size: 22px;
   font-weight: 600;
 }
+
 .astrik {
   color: $darkOrange;
 }
 
 .comment-div {
   font-size: 12px;
-  color: #797979;
+  color: $commentText;
   margin: 0 -15px;
 }
 
 .headingdisc {
   font-size: 12px;
-  color: #797979;
+  color: $commentText;
 }
 
 .comment-input {

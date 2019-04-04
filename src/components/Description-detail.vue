@@ -110,6 +110,7 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
 @import "../assets/scss/_variables.scss";
+@import "../assets/scss/_mixins.scss";
 .durationText {
   color: $darkOrange !important;
   font-size: 11px;
@@ -126,12 +127,6 @@ export default {
 
   .dicsTable {
     color: #fff;
-    //   width: 275px;
-  }
-
-  @mixin tableContent($fontsize) {
-    font-size: $fontsize;
-    font-weight: 900;
   }
 
   .tableTitle {
@@ -141,7 +136,7 @@ export default {
 
   .tableText {
     @include tableContent(12px);
-    color: #c3c3c3;
+    color: $iconcColor;
     padding-left: 12px;
   }
 }
@@ -152,7 +147,7 @@ export default {
   font-size: 13px;
 
   .rating-icon {
-    color: #feaf00;
+    color: $mango;
     font-size: 12px;
   }
   .rating-numbers-div {
@@ -163,7 +158,7 @@ export default {
       color: #ffffff;
       height: 20px;
       line-height: 20px;
-      background-color: #feaf00;
+      background-color: $mango;
       padding: 10px;
       border-radius: 50%;
       display: table-cell;
@@ -171,7 +166,7 @@ export default {
     }
   }
   .share-icons {
-    color: #c3c3c3;
+    color: $iconcColor;
   }
   .shareicons-div {
     line-height: 40px;

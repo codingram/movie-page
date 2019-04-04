@@ -28,6 +28,8 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+@import "../assets/scss/_variables.scss";
+@import "../assets/scss/_mixins.scss";
 .top-header {
   background-color: black;
   font-size: 13px;
@@ -42,14 +44,11 @@ export default {
   }
 
   .near-headerbrand-text {
-    color: #ea6a00;
+    color: $darkOrange;
     font-size: 12px;
     font-weight: bolder;
   }
-  @mixin topheader-mixin {
-    color: #858586;
-    font-size: 12px;
-  }
+
   .near-headerbrand-desc {
     @include topheader-mixin();
   }

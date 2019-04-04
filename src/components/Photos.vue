@@ -67,13 +67,14 @@ export default {
 };
 </script>
 <style scoped lang="scss">
+@import "../assets/scss/_variables.scss";
 .carouselPhoto {
   .carouselHeading {
     margin: 0 -15px;
   }
   .carouselPhotoHeader {
     font-family: "Roboto Condensed", sans-serif;
-    color: #ea6a00;
+    color: $darkOrange;
     font-size: 26px;
     font-weight: 600;
   }
@@ -81,9 +82,9 @@ export default {
   .sidebtn {
     background-color: #ffffff;
     font-size: 11px;
-    color: #c3c3c3;
+    color: $iconcColor;
     border-radius: 15px;
-    border: 1px solid #c3c3c3;
+    border: 1px solid $iconcColor;
     outline: none;
   }
 

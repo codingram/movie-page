@@ -110,17 +110,19 @@ export default {
 };
 </script>
 <style lang="scss">
+@import "../assets/scss/_variables.scss";
+
 .footer-two {
   background: #000000;
   height: 50px;
   line-height: 50px;
   width: 100%;
   font-size: 12px;
-  color: #464c50;
+  color: $iconBackground;
   .right-side {
     text-align: left;
     a {
-      color: #464c50;
+      color: $iconBackground;
       padding: 0 5px;
       text-decoration: none;
     }
@@ -136,7 +138,7 @@ export default {
   color: #ffffff;
 
   .col1-content {
-    color: #e0e0e0;
+    color: $contentColor;
     font-size: 13px;
 
     ul {
@@ -144,12 +146,12 @@ export default {
 
       li {
         display: inline-block;
-        background-color: #464c50;
+        background-color: $iconBackground;
         border-radius: 50%;
         margin-right: 5px;
 
         a {
-          color: #cccccc;
+          color: $greyishWhite;
           display: table-cell;
           vertical-align: middle;
           text-align: center;
@@ -159,7 +161,7 @@ export default {
           width: 32px;
 
           &:hover {
-            color: #cccccc;
+            color: $greyishWhite;
             text-decoration: none;
           }
         }
@@ -168,7 +170,7 @@ export default {
   }
 
   .col2-content {
-    color: #e0e0e0;
+    color: $contentColor;
     font-size: 13px;
 
     ul {
@@ -177,7 +179,7 @@ export default {
       li {
         line-height: 32px;
         a {
-          color: #cccccc;
+          color: $greyishWhite;
           text-decoration: none;
         }
       }
@@ -187,12 +189,12 @@ export default {
   .col3-content {
     .post-title {
       font-size: 11px;
-      color: #e0e0e0;
+      color: $contentColor;
     }
 
     .post-date {
       font-size: 10px;
-      color: #777777;
+      color: $commentText;
     }
   }
 
@@ -203,22 +205,22 @@ export default {
       padding-left: 0;
       li {
         line-height: 24px;
-        color: #cccccc;
+        color: $greyishWhite;
       }
     }
 
     .contact-no {
-      color: #fb7e00;
+      color: $brightOrange;
     }
 
     .contact-input {
-      background-color: #777777;
+      background-color: $commentText;
       opacity: 0.7;
       height: 35px;
       border: none;
 
       &::placeholder {
-        color: #cccccc;
+        color: $greyishWhite;
         padding-left: 20px;
       }
     }

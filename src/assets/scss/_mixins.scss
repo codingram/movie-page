@@ -1,0 +1,9 @@
+@mixin topheader-mixin {
+  color: #858586;
+  font-size: 12px;
+}
+
+@mixin tableContent($fontsize) {
+  font-size: $fontsize;
+  font-weight: 900;
+}
