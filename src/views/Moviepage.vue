@@ -8,6 +8,12 @@
           <b-col md="10" class="mx-auto p-0">
             <Moviedisc></Moviedisc>
             <Photo></Photo>
+            <span v-if="down" v-on:click="down=!down">
+              <font-awesome-icon :icon="['fas', 'chevron-down']"/>
+            </span>
+            <span v-else v-on:click="down=!down">
+              <font-awesome-icon :icon="['fas', 'chevron-up']"/>
+            </span>
             <Showtime></Showtime>
             <Wcomment></Wcomment>
           </b-col>
@@ -37,6 +43,11 @@ export default {
     Showtime,
     Photo,
     Footerdiv
+  },
+  data(){
+    return{
+      down: true
+    }
   }
 };
 </script>

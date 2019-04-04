@@ -5,7 +5,7 @@
         <div class="p-5">
           <b-row>
             <b-col md="3">
-              <h3 class="col1-head font-weight-bold">MOVIAK</h3>
+              <div class="pb-3"><img src="../assets/images/logo.png" alt="moviak"></div>
               <div class="col1-content">
                 Lorem ipsum dolor sit, amet consecr temibus itaque dicta adipisicing elit. Provi iusto eveniet maiores, vitae corporis, tempobus itaque dicta, asperiores nesciunt atque a. Explicabo et veritatis nesciunt quo repudiandae, ipsum dolo
                 <div class="rating-numbers-div">

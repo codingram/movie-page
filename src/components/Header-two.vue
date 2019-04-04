@@ -4,7 +4,9 @@
       <b-container class="p-0">
         <b-col md="10" class="mx-auto p-0">
           <b-navbar toggleable="lg" class="px-0">
-            <b-navbar-brand class="brandname" href="#">MOVIAK</b-navbar-brand>
+            <b-navbar-brand class="brandname brandimagenew" href="#">
+              <img src="../assets/images/logo1.jpg" alt="moviak">
+            </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
               <!-- Right aligned nav items -->
@@ -44,6 +46,13 @@ export default {
 
 .navbar-input {
   border-radius: 20px;
+}
+
+.brandimagenew img {
+  height: 45px;
+  width: 150px;
+  vertical-align: middle;
+  border-style: none;
 }
 
 b-navbar-brand {

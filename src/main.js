@@ -17,7 +17,9 @@ import {
   faStar,
   faStarHalfAlt,
   faStore,
-  faPhone
+  faPhone,
+  faChevronDown,
+  faChevronUp
 } from "@fortawesome/free-solid-svg-icons"; //fas fa
 
 import {
@@ -39,7 +41,9 @@ library.add(
   faStar,
   faStarHalfAlt,
   faStore,
-  faPhone
+  faPhone,
+  faChevronDown,
+  faChevronUp
 ); //fas
 
 library.add(faEnvelope); //far
