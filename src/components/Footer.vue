@@ -5,7 +5,9 @@
         <div class="p-5">
           <b-row>
             <b-col md="3">
-              <div class="pb-3"><img src="../assets/images/logo.png" alt="moviak"></div>
+              <div class="pb-3">
+                <img src="../assets/images/logo.png" alt="moviak">
+              </div>
               <div class="col1-content">
                 Lorem ipsum dolor sit, amet consecr temibus itaque dicta adipisicing elit. Provi iusto eveniet maiores, vitae corporis, tempobus itaque dicta, asperiores nesciunt atque a. Explicabo et veritatis nesciunt quo repudiandae, ipsum dolo
                 <div class="rating-numbers-div">
@@ -81,6 +83,17 @@
                     <span class="contact-no">01-234-5678</span>
                   </li>
                 </ul>
+
+                <div class="input-group mb-3 pr-5">
+                  <input
+                    type="text"
+                    class="form-control contact-input"
+                    placeholder="Your email id"
+                  >
+                  <div class="input-group-append">
+                    <span class="input-group-text"><font-awesome-icon :icon="['fas', 'envelope-open-text']" class="mr-2"/></span>
+                  </div>
+                </div>
                 <input type="text" class="contact-input" placeholder="Your email id">
               </div>
             </b-col>
@@ -213,6 +226,12 @@ export default {
       color: $brightOrange;
     }
 
+    .form-control{
+    color: #495057;
+    padding: 0;
+    border-radius: 0;
+      }
+
     .contact-input {
       background-color: $commentText;
       opacity: 0.7;
@@ -223,6 +242,7 @@ export default {
         color: $greyishWhite;
         padding-left: 20px;
       }
+
     }
   }
 }
