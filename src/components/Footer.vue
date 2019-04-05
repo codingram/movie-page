@@ -85,16 +85,14 @@
                 </ul>
 
                 <div class="input-group mb-3 pr-5">
-                  <input
-                    type="text"
-                    class="form-control contact-input"
-                    placeholder="Your email id"
-                  >
+                  <input type="text" class="form-control contact-input" placeholder="Your email id">
                   <div class="input-group-append">
-                    <span class="input-group-text"><font-awesome-icon :icon="['fas', 'envelope-open-text']" class="mr-2"/></span>
+                    <span class="input-group-text">
+                      <font-awesome-icon :icon="['fas', 'envelope-open-text']" class="mr-2"/>
+                    </span>
                   </div>
                 </div>
-                <input type="text" class="contact-input" placeholder="Your email id">
+                <!-- <input type="text" class="contact-input" placeholder="Your email id"> -->
               </div>
             </b-col>
           </b-row>
@@ -226,11 +224,29 @@ export default {
       color: $brightOrange;
     }
 
-    .form-control{
-    color: #495057;
-    padding: 0;
-    border-radius: 0;
-      }
+    .form-control {
+      color: #ffffff;
+      padding: 0;
+      border-radius: 0;
+      font-size: 13px;
+    }
+
+    .input-group-append {
+    margin-left: 0px;
+    background-color: transparent;
+}
+
+    .input-group-text {
+      padding: 0.375rem 0.75rem;
+      margin-bottom: 0;
+      color: #495057;
+      background-color: $commentText;
+      opacity: 0.7;
+
+      text-align: center;
+      border: none;
+      border-radius: 0;
+    }
 
     .contact-input {
       background-color: $commentText;
@@ -242,8 +258,10 @@ export default {
         color: $greyishWhite;
         padding-left: 20px;
       }
-
     }
+  }
+  *:focus{
+    outline: none;
   }
 }
 </style>

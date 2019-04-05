@@ -33,8 +33,8 @@ export default {
 .top-header {
   background-color: black;
   font-size: 13px;
-  height: 28px;
-  line-height: 28px;
+  height: 30px;
+  line-height: 30px;
 
   .top-header-brand {
     color: #ffffff;

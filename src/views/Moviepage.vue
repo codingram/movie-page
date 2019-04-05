@@ -53,4 +53,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+  *:focus{
+    outline: none;
+  }
 </style>
