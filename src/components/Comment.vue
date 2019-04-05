@@ -89,7 +89,7 @@ export default {
 
 .comment-input {
   border-radius: 0;
-  border: 1px solid #dbdbdb !important;
+  border: 1px solid #dbdbdb;
   resize: none;
 }
 </style>
