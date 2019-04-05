@@ -4,13 +4,14 @@
       <b-container class="p-0">
         <b-col md="10" class="mx-auto p-0">
           <span class="top-header-brand">
-            <font-awesome-icon :icon="['fab', 'apple']" class/>VIP
+            <font-awesome-icon :icon="['fab', 'apple']"/>VIP
             <em>SWEEPSTAKES</em>
           </span>
           <span class="near-headerbrand-text font-weight-bold ml-3">$5000 SHOPPING SPREE</span>
-          <span
-            class="near-headerbrand-desc ml-2"
-          >JoinMovies VIP for a chance to win. Don't forget to join during checkout</span>
+          <span class="near-headerbrand-desc ml-2">
+            JoinMovies VIP for a chance to win. Don't forget to join during
+            checkout
+          </span>
           <a href="#">
             <span class="float-right login-text">
               <font-awesome-icon :icon="['fa', 'user']" class="mr-1"/>Login
@@ -33,7 +34,7 @@ export default {
 .top-header {
   background-color: black;
   font-size: 13px;
-  height: 30px;
+  height: 29px;
   line-height: 30px;
 
   .top-header-brand {

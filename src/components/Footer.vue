@@ -6,30 +6,33 @@
           <b-row>
             <b-col md="3">
               <div class="pb-3">
-                <img src="../assets/images/logo.png" alt="moviak">
+                <img src="../assets/images/logo.png" alt="moviak" />
               </div>
               <div class="col1-content">
-                Lorem ipsum dolor sit, amet consecr temibus itaque dicta adipisicing elit. Provi iusto eveniet maiores, vitae corporis, tempobus itaque dicta, asperiores nesciunt atque a. Explicabo et veritatis nesciunt quo repudiandae, ipsum dolo
+                Lorem ipsum dolor sit, amet consecr temibus itaque dicta
+                adipisicing elit. Provi iusto eveniet maiores, vitae corporis,
+                tempobus itaque dicta, asperiores nesciunt atque a. Explicabo et
+                veritatis nesciunt quo repudiandae, ipsum dolo
                 <div class="rating-numbers-div">
                   <ul class="p-0 mt-3">
                     <li>
                       <a href="#">
-                        <font-awesome-icon :icon="['fab', 'facebook-f']"/>
+                        <font-awesome-icon :icon="['fab', 'facebook-f']" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <font-awesome-icon :icon="['fab', 'twitter']"/>
+                        <font-awesome-icon :icon="['fab', 'twitter']" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <font-awesome-icon :icon="['fab', 'google-plus-g']"/>
+                        <font-awesome-icon :icon="['fab', 'google-plus-g']" />
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <font-awesome-icon :icon="['fab', 'pinterest']"/>
+                        <font-awesome-icon :icon="['fab', 'pinterest']" />
                       </a>
                     </li>
                   </ul>
@@ -59,11 +62,15 @@
               <h5 class="col3-head font-weight-bold">Recent Posts</h5>
               <div class="col3-content mt-3">
                 <div class="recent-post mb-4">
-                  <div class="post-title">Doctor Strange assembles with the Avengers</div>
+                  <div class="post-title">
+                    Doctor Strange assembles with the Avengers
+                  </div>
                   <div class="post-date">December 20,2016</div>
                 </div>
                 <div class="recent-post">
-                  <div class="post-title">5 movies to watch this week(29 Sep 2016)</div>
+                  <div class="post-title">
+                    5 movies to watch this week(29 Sep 2016)
+                  </div>
                   <div class="post-date">December 20,2016</div>
                 </div>
               </div>
@@ -73,22 +80,35 @@
               <div class="col4-content mt-3">
                 <ul>
                   <li>
-                    <font-awesome-icon :icon="['fab', 'telegram-plane']" class="mr-2"/>9067 Zurich,Switzerland 87
+                    <font-awesome-icon
+                      :icon="['fab', 'telegram-plane']"
+                      class="mr-2"
+                    />9067 Zurich,Switzerland 87
                   </li>
                   <li>
-                    <font-awesome-icon :icon="['far', 'envelope']" class="mr-2"/>abc@gmail.com
+                    <font-awesome-icon
+                      :icon="['far', 'envelope']"
+                      class="mr-2"
+                    />abc@gmail.com
                   </li>
                   <li>
-                    <font-awesome-icon :icon="['fas', 'phone']" class="mr-2"/>
+                    <font-awesome-icon :icon="['fas', 'phone']" class="mr-2" />
                     <span class="contact-no">01-234-5678</span>
                   </li>
                 </ul>
 
                 <div class="input-group mb-3 pr-5">
-                  <input type="text" class="form-control contact-input" placeholder="Your email id">
+                  <input
+                    type="text"
+                    class="form-control contact-input"
+                    placeholder="Your email id"
+                  />
                   <div class="input-group-append">
                     <span class="input-group-text">
-                      <font-awesome-icon :icon="['fas', 'envelope-open-text']" class="mr-2"/>
+                      <font-awesome-icon
+                        :icon="['fas', 'envelope-open-text']"
+                        class="mr-2"
+                      />
                     </span>
                   </div>
                 </div>
@@ -176,6 +196,11 @@ export default {
             text-decoration: none;
           }
         }
+
+        &:hover {
+          background-color: $dimOrange;
+          transition: 0.3s;
+        }
       }
     }
   }
@@ -232,17 +257,16 @@ export default {
     }
 
     .input-group-append {
-    margin-left: 0px;
-    background-color: transparent;
-}
+      margin-left: 0px;
+      background-color: transparent;
+    }
 
     .input-group-text {
       padding: 0.375rem 0.75rem;
       margin-bottom: 0;
-      color: #495057;
+      color: #ffffff;
       background-color: $commentText;
       opacity: 0.7;
-
       text-align: center;
       border: none;
       border-radius: 0;
@@ -258,10 +282,11 @@ export default {
         color: $greyishWhite;
         padding-left: 20px;
       }
+
+      :focus {
+        outline: none !important;
+      }
     }
-  }
-  *:focus{
-    outline: none;
   }
 }
 </style>

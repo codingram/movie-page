@@ -3,14 +3,18 @@
     <b-row class="carouselHeading">
       <div class="carouselPhotoHeader mb-2">Video & Photo</div>
       <div class="mb-2 ml-auto">
-        <button class="sidebtn px-3">1 video</button>
-        <button class="sidebtn px-3">6 photos</button>
+        <button class="sidebtn px-3 ml-2">
+          <font-awesome-icon :icon="['fa', 'tape']" />1 video
+        </button>
+        <button class="sidebtn px-3 ml-2">
+          <font-awesome-icon :icon="['fa', 'tape']" />6 photos
+        </button>
       </div>
     </b-row>
     <b-row>
       <swiper :options="swiperOption" class="text-center">
         <swiper-slide v-for="img in carouselImg" :key="img.index">
-          <img :src="img" alt class="carousel-img">
+          <img :src="img" alt class="carousel-img" />
         </swiper-slide>
         <div class="swiper-button-prev" slot="button-prev"></div>
         <div class="swiper-button-next" slot="button-next"></div>
@@ -18,7 +22,6 @@
     </b-row>
   </div>
 </template>
-
 
 <script>
 import img1 from "../assets/images/1.jpg";
