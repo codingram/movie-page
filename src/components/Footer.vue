@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="footerimage mt-5">
-      <b-container class="p-5">
+      <b-container class="px-5 py-3">
         <div class="p-5">
           <b-row>
             <b-col md="3">
