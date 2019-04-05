@@ -2,7 +2,7 @@
   <div class="carouselPhoto mt-4">
     <b-row class="carouselHeading">
       <div class="carouselPhotoHeader mb-2">Video & Photo</div>
-      <div class="mb-2 ml-auto">
+      <div class="mb-2 margining">
         <button class="sidebtn px-3 ml-2">
           <font-awesome-icon :icon="['fa', 'tape']" />1 video
         </button>
@@ -74,6 +74,10 @@ export default {
 .carouselPhoto {
   .carouselHeading {
     margin: 0 -15px;
+
+    .margining {
+      margin-left: auto;
+    }
   }
   .carouselPhotoHeader {
     font-family: "Roboto Condensed", sans-serif;
@@ -108,5 +112,10 @@ export default {
   background-color: rgba(0, 0, 0, 0.6);
   right: 0px;
   left: auto;
+}
+@media only screen and (max-width: 600px) {
+  .margining {
+    margin: auto;
+  }
 }
 </style>

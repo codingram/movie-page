@@ -6,16 +6,14 @@
 </template>
 
 <script>
-  import headerOne from "@/components/Header-one.vue";
-  import headerTwo from "@/components/Header-two.vue";
+import headerOne from "@/components/Header-one.vue";
+import headerTwo from "@/components/Header-two.vue";
 export default {
   name: "NavBar",
-  components:{
-      headerOne,
-      headerTwo
+  components: {
+    headerOne,
+    headerTwo
   }
 };
 </script>
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

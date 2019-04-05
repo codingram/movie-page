@@ -8,9 +8,7 @@
 export default {
   name: "BackgroundPoster",
   data() {
-    return {
-
-    };
+    return {};
   }
 };
 </script>
@@ -21,5 +19,10 @@ export default {
   background: url("../assets/images/backposter.jpg");
   background-size: cover;
   background-position: center;
+}
+@media only screen and (max-width: 600px) {
+  .backposterimage {
+    display: none;
+  }
 }
 </style>

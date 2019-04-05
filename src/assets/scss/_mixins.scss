@@ -3,7 +3,7 @@
   font-size: 12px;
 }
 
-@mixin tableContent($fontsize) {
+@mixin tableContent($fontsize,$fontweight) {
   font-size: $fontsize;
-  font-weight: 900;
+  font-weight: $fontweight;
 }

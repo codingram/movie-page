@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="fulfooter-div">
     <div class="footerimage mt-5">
       <b-container class="px-5 py-3">
-        <div class="p-5">
+        <div class="all-side-padding">
           <b-row>
             <b-col md="3">
               <div class="pb-3">
@@ -112,7 +112,6 @@
                     </span>
                   </div>
                 </div>
-                <!-- <input type="text" class="contact-input" placeholder="Your email id"> -->
               </div>
             </b-col>
           </b-row>
@@ -160,13 +159,16 @@ export default {
   }
 }
 .footerimage {
-  height: 400px;
+  height: auto;
   width: 100%;
   background: linear-gradient(to bottom rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
     url("../assets/images/11.jpg");
   background-size: cover;
   background-position: center;
   color: #ffffff;
+  .all-side-padding {
+    padding: 3rem;
+  }
 
   .col1-content {
     color: $contentColor;
@@ -286,6 +288,35 @@ export default {
       :focus {
         outline: none !important;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .all-side-padding {
+    padding: 0 !important;
+  }
+  .fulfooter-div {
+    margin: 0 -30px 0 -30px;
+  }
+  .col4-head {
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+  .col3-head {
+    margin-bottom: -10px;
+  }
+  .footer-two {
+    height: 50px;
+    line-height: 25px;
+    .right-side {
+      text-align: center;
+
+      clear: both;
+      margin: 0 auto;
+    }
+    .left-side {
+      text-align: center;
     }
   }
 }
