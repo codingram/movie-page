@@ -6,7 +6,10 @@
           <b-row>
             <b-col md="2" class="p-0">
               <span class="top-header-brand">
-                <font-awesome-icon :icon="['fab', 'apple']" />VIP
+                <font-awesome-icon
+                  :icon="['fab', 'apple']"
+                  class="mr-1 apple-font"
+                />VIP
                 <em>SWEEPSTAKES</em>
               </span>
             </b-col>
@@ -17,7 +20,7 @@
             </b-col>
             <b-col md="6" class="mx-auto p-0">
               <span class="near-headerbrand-desc">
-                JoinMovies VIP for a chance to win. Don't forget to join during
+                Join Movies VIP for a chance to win. Don't forget to join during
                 checkout
               </span>
             </b-col>
@@ -45,7 +48,7 @@ export default {
 @import "../assets/scss/_mixins.scss";
 .top-header {
   background-color: black;
-  font-size: 13px;
+  font-size: 12px;
   height: auto;
   line-height: 28px;
 
@@ -54,18 +57,24 @@ export default {
     background-color: #9c5d9e;
     font-weight: bold;
     padding: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    .apple-font {
+      margin-bottom: 1px;
+    }
   }
 
   .near-headerbrand-text {
     color: $darkOrange;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bolder;
-    margin-left: -5px;
+    margin-left: -10px;
   }
 
   .near-headerbrand-desc {
     @include topheader-mixin(11px);
-    margin-left: -50px;
+    margin-left: -70px;
   }
 
   .login-text {

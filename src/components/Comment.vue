@@ -1,7 +1,7 @@
 <template>
   <div class="comment-div">
     <div class="descriptionHeading mt-4">
-      <u>WRITE A COMMENT</u>
+      <span class="commentunderline">WRITE A COMMENT</span>
     </div>
     <div class="headingdisc mt-1 mb-2">
       Your email address will not be published. Required fields are marked
@@ -62,6 +62,7 @@ export default {
     color: white;
     outline: none;
     border: none;
+    font-weight: 900;
   }
 }
 
@@ -70,6 +71,10 @@ export default {
   color: $darkOrange;
   font-size: 19px;
   font-weight: 600;
+
+  .commentunderline {
+    border-bottom: 3px solid $darkOrange;
+  }
 }
 
 .astrik {

@@ -31,11 +31,11 @@
                 </b-nav-form>
               </b-navbar-nav>
               <b-navbar-nav class="ml-auto mr-3">
-                <b-nav-item href="#">HOME</b-nav-item>
-                <b-nav-item href="#">MOVIE LAYOUT</b-nav-item>
-                <b-nav-item href="#">PAGE SINGLE</b-nav-item>
-                <b-nav-item href="#">SHOW TIME</b-nav-item>
-                <b-nav-item href="#">TOP RATED</b-nav-item>
+                <b-nav-item href="#" class="ml-4">HOME</b-nav-item>
+                <b-nav-item href="#" class="ml-4">MOVIE LAYOUT</b-nav-item>
+                <b-nav-item href="#" class="ml-4">PAGE SINGLE</b-nav-item>
+                <b-nav-item href="#" class="ml-4">SHOW TIME</b-nav-item>
+                <b-nav-item href="#" class="ml-4">TOP RATED</b-nav-item>
               </b-navbar-nav>
             </b-collapse>
           </b-navbar>

@@ -221,10 +221,11 @@ export default {
 
   .rating-icon {
     color: $mango;
-    font-size: 12px;
+    font-size: 11px;
   }
   .vote-number {
     color: #797979;
+    font-size: 12px;
   }
 
   .share-text {
@@ -247,6 +248,7 @@ export default {
     }
   }
   .share-icons {
+    font-size: 12px;
     color: $iconcColor;
   }
   .shareicons-div {
