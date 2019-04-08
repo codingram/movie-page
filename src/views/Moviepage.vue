@@ -1,20 +1,18 @@
 <template>
   <div>
-    <!-- <div class="mx-5 px-4"> -->
-      <Navbar></Navbar>
-      <Backposter></Backposter>
-      <b-row>
-        <b-container>
-          <b-col md="10" class="mx-auto p-0">
-            <Moviedisc></Moviedisc>
-            <Photo></Photo>
-            <Showtime></Showtime>
-            <Wcomment></Wcomment>
-          </b-col>
-        </b-container>
-      </b-row>
-      <Footerdiv></Footerdiv>
-    <!-- </div> -->
+    <Navbar></Navbar>
+    <Backposter></Backposter>
+    <b-row class="m-0">
+      <b-container>
+        <b-col md="11" class="mx-auto p-0">
+          <Moviedisc></Moviedisc>
+          <Photo></Photo>
+          <Showtime></Showtime>
+          <Wcomment></Wcomment>
+        </b-col>
+      </b-container>
+    </b-row>
+    <Footerdiv></Footerdiv>
   </div>
 </template>
 

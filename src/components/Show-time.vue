@@ -66,7 +66,7 @@ export default {
     }
   }
   .backColor {
-    background-color: #eeeeee;
+    background-color: #f8f8f8;
   }
 
   .listStyle {

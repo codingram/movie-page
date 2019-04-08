@@ -1,6 +1,6 @@
 <template>
   <div class="comment-div">
-    <div class="descriptionHeading mt-5">
+    <div class="descriptionHeading mt-4">
       <u>WRITE A COMMENT</u>
     </div>
     <div class="headingdisc mt-1 mb-2">
@@ -68,7 +68,7 @@ export default {
 .descriptionHeading {
   font-family: "Roboto Condensed", sans-serif;
   color: $darkOrange;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 600;
 }
 
@@ -89,7 +89,7 @@ export default {
 
 .comment-input {
   border-radius: 0;
-  border: 1px solid #dbdbdb;
-  resize: none;
+  border: 1px solid #f0f0f0;
+  // resize: none;
 }
 </style>

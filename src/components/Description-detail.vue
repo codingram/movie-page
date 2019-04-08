@@ -2,13 +2,13 @@
   <div>
     <b-row>
       <div class="descriptionOne p-4">
-        <h5 class="text-white font-weight-bold">{{ movieName }}</h5>
-        <span class="bgcolortext p-1 text-white font-weight-bold">{{
-          bgcolorText
-        }}</span>
-        <span class="durationText font-weight-bold ml-3">{{
-          movieDuration
-        }}</span>
+        <h5 class="text-white font-weight-bold moviename">{{ movieName }}</h5>
+        <span class="bgcolortext p-1 text-white font-weight-bold">
+          {{ bgcolorText }}
+        </span>
+        <span class="durationText font-weight-bold ml-3">
+          {{ movieDuration }}
+        </span>
         <div>
           <table class="dicsTable mx-auto mt-3">
             <tr v-for="tablecontent in tablecontents" :key="tablecontent.index">
@@ -21,72 +21,74 @@
         </div>
       </div>
     </b-row>
-    <b-row>
-      <div class="descriptionTwo pt-2">
-        <div class="float-left">
-          <div>
-            <font-awesome-icon
-              :icon="['fa', 'star']"
-              class="rating-icon mr-1"
-            />
-            <font-awesome-icon
-              :icon="['fa', 'star']"
-              class="rating-icon mr-1"
-            />
-            <font-awesome-icon
-              :icon="['fa', 'star']"
-              class="rating-icon mr-1"
-            />
-            <font-awesome-icon
-              :icon="['fa', 'star']"
-              class="rating-icon mr-1"
-            />
-            <font-awesome-icon
-              :icon="['fa', 'star-half-alt']"
-              class="rating-icon mr-1"
-            />
-            <br />
-            <span>140 votes</span>
+    <div class="pt-2">
+      <b-row>
+        <div class="descriptionTwo pt-2">
+          <div class="float-left">
+            <div>
+              <font-awesome-icon
+                :icon="['fa', 'star']"
+                class="rating-icon mr-1"
+              />
+              <font-awesome-icon
+                :icon="['fa', 'star']"
+                class="rating-icon mr-1"
+              />
+              <font-awesome-icon
+                :icon="['fa', 'star']"
+                class="rating-icon mr-1"
+              />
+              <font-awesome-icon
+                :icon="['fa', 'star']"
+                class="rating-icon mr-1"
+              />
+              <font-awesome-icon
+                :icon="['fa', 'star-half-alt']"
+                class="rating-icon mr-1"
+              />
+              <br />
+              <span class="vote-number">140 votes</span>
+            </div>
+          </div>
+          <div class="float-left rating-numbers-div ml-3">
+            <span class="rating-numbers font-weight-bold">4.4</span>
+          </div>
+          <div class="float-right shareicons-div">
+            <span class="share-text">Share:</span>
+            <a href="#">
+              <font-awesome-icon
+                :icon="['fab', 'facebook-f']"
+                class="share-icons ml-2"
+              />
+            </a>
+            <a href="#">
+              <font-awesome-icon
+                :icon="['fab', 'twitter']"
+                class="share-icons ml-2"
+              />
+            </a>
+            <a href="#">
+              <font-awesome-icon
+                :icon="['fab', 'google-plus-g']"
+                class="share-icons ml-2"
+              />
+            </a>
+            <a href="#">
+              <font-awesome-icon
+                :icon="['fab', 'pinterest']"
+                class="share-icons ml-2"
+              />
+            </a>
           </div>
         </div>
-        <div class="float-left rating-numbers-div ml-3">
-          <span class="rating-numbers font-weight-bold">4.4</span>
-        </div>
-        <div class="float-right shareicons-div">
-          Share:
-          <a href="#">
-            <font-awesome-icon
-              :icon="['fab', 'facebook-f']"
-              class="share-icons ml-2"
-            />
-          </a>
-          <a href="#">
-            <font-awesome-icon
-              :icon="['fab', 'twitter']"
-              class="share-icons ml-2"
-            />
-          </a>
-          <a href="#">
-            <font-awesome-icon
-              :icon="['fab', 'google-plus-g']"
-              class="share-icons ml-2"
-            />
-          </a>
-          <a href="#">
-            <font-awesome-icon
-              :icon="['fab', 'pinterest']"
-              class="share-icons ml-2"
-            />
-          </a>
-        </div>
-      </div>
-    </b-row>
-    <div class="pl-2">
-      <hr />
+      </b-row>
+    </div>
+    <div class="pl-2 pt-2">
+      <hr class="line-in-desc" />
     </div>
     <b-row>
       <div class="descriptionThree">
-        <div class="descriptionHeading">Synopsis</div>
+        <div class="descriptionHeading mb-3">Synopsis</div>
         <div class="descriptionContent">
           <p>
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -170,13 +172,25 @@ export default {
 @import "../assets/scss/_variables.scss";
 @import "../assets/scss/_mixins.scss";
 .durationText {
-  color: $darkOrange !important;
+  color: $darkOrange;
   font-size: 11px;
 }
+
+.line-in-desc {
+  border-top: 1px solid #ececec;
+  margin-right: -20px;
+}
+
 .descriptionOne {
   height: auto;
   width: 100%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+
+  .moviename {
+    font-family: $robotoC;
+    font-size: 24px;
+    letter-spacing: 0.5px;
+  }
 
   .bgcolortext {
     font-size: 10px;
@@ -209,6 +223,14 @@ export default {
     color: $mango;
     font-size: 12px;
   }
+  .vote-number {
+    color: #797979;
+  }
+
+  .share-text {
+    font-weight: 900;
+  }
+
   .rating-numbers-div {
     height: auto;
     line-height: auto;
@@ -278,7 +300,7 @@ export default {
 
   .dicsTable {
     width: 80%;
-    color: $iconcColor !important;
+    color: $iconcColor;
   }
 
   .descriptionThree {

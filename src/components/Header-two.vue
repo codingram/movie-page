@@ -1,11 +1,15 @@
 <template>
   <div>
-    <b-row class="m-0"
+    <b-row class="m-0">
       <b-container class="p-0">
-        <b-col md="10" class="mx-auto p-0">
-          <b-navbar toggleable="lg" class="px-0">
-            <b-navbar-brand class="brandname brandimagenew" href="#">
-              <img src="../assets/images/logo1.jpg" alt="moviak">
+        <b-col md="11" class="mx-auto p-0">
+          <b-navbar toggleable="lg" class="p-0">
+            <b-navbar-brand href="#">
+              <img
+                src="../assets/images/logo1.jpg"
+                alt="moviak"
+                width="150px"
+              />
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
@@ -17,10 +21,16 @@
                     class="mr-sm-2 navbar-input"
                     placeholder="Movie Search..."
                   ></b-form-input>
-                  <b-button size="sm" class="my-2 my-sm-0 roundBtn border-0">GO</b-button>
+                  <button
+                    type="button"
+                    size="sm"
+                    class="my-2 my-sm-0 roundBtn border-0"
+                  >
+                    GO
+                  </button>
                 </b-nav-form>
               </b-navbar-nav>
-              <b-navbar-nav class="ml-auto">
+              <b-navbar-nav class="ml-auto mr-3">
                 <b-nav-item href="#">HOME</b-nav-item>
                 <b-nav-item href="#">MOVIE LAYOUT</b-nav-item>
                 <b-nav-item href="#">PAGE SINGLE</b-nav-item>
@@ -46,22 +56,16 @@ export default {
 
 .navbar-input {
   border-radius: 20px;
-}
-
-.brandimagenew img {
-  height: 45px;
-  width: 150px;
-  vertical-align: middle;
-  border-style: none;
-}
-
-b-navbar-brand {
-  color: $darkOrange;
+  :focus {
+    outline: none !important;
+  }
 }
 
 .roundBtn {
   background-color: $darkOrange;
   outline: none;
+  font-size: 11px;
+  font-weight: 800;
   text-align: center;
   width: 30px;
   height: 30px;
@@ -72,17 +76,23 @@ b-navbar-brand {
   align-items: center;
   color: white;
   text-decoration: none;
+  &:hover {
+    background-color: $darkOrange;
+  }
+  &:active {
+    background-color: $darkOrange;
+  }
 }
 
 .navbar-light .navbar-nav .nav-link {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: $robotoC;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.5px;
   color: #000;
 
   &:hover {
-    color: $darkOrange !important;
+    color: #000;
     transition: 0.2s;
   }
 }
