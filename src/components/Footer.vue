@@ -222,11 +222,6 @@ export default {
             text-decoration: none;
           }
         }
-
-        &:hover {
-          background-color: $dimOrange;
-          transition: 0.3s;
-        }
       }
     }
   }
