@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-row>
+    <b-row class="m-0"
       <b-container class="p-0">
         <b-col md="10" class="mx-auto p-0">
           <b-navbar toggleable="lg" class="px-0">

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="mx-5 px-4">
+    <!-- <div class="mx-5 px-4"> -->
       <Navbar></Navbar>
       <Backposter></Backposter>
       <b-row>
@@ -14,7 +14,7 @@
         </b-container>
       </b-row>
       <Footerdiv></Footerdiv>
-    </div>
+    <!-- </div> -->
   </div>
 </template>
 
