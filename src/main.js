@@ -11,53 +11,19 @@ import "bootstrap-vue/dist/bootstrap-vue.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 
-import {
-  faEnvelopeOpenText,
-  faUser,
-  faStar,
-  faStarHalfAlt,
-  faStore,
-  faPhone,
-  faChevronDown,
-  faChevronUp,
-  faTape
-} from "@fortawesome/free-solid-svg-icons"; //fas fa
+import { faEnvelopeOpenText, faUser } from "@fortawesome/free-solid-svg-icons"; //fas fa
 
-import {
-  faFacebookF,
-  faTwitter,
-  faApple,
-  faGooglePlusG,
-  faPinterest,
-  faTelegramPlane
-} from "@fortawesome/free-brands-svg-icons"; //fab
+import { faFacebookF, faTwitter } from "@fortawesome/free-brands-svg-icons"; //fab
 
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"; //far
 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(
-  faEnvelopeOpenText,
-  faUser,
-  faStar,
-  faStarHalfAlt,
-  faStore,
-  faPhone,
-  faChevronDown,
-  faChevronUp,
-  faTape
-); //fas
+library.add(faEnvelopeOpenText, faUser); //fas
 
 library.add(faEnvelope); //far
 
-library.add(
-  faFacebookF,
-  faTwitter,
-  faApple,
-  faGooglePlusG,
-  faPinterest,
-  faTelegramPlane
-); //fab
+library.add(faFacebookF, faTwitter); //fab
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 Vue.use(VueAwesomeSwiper);
